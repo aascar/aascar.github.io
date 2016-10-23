@@ -21,8 +21,12 @@ $(document).on('submit', "#form-join", function(e){
         timeout : 30000     //30 seconds timeout
     }).done(function(status){
         $("#form-email").attr("placeholder", "Welcome On board..!");
+        $("#form-email").val("");
+        $("#form-submit").val("Join Us!");
     }).fail(function(){
         $("#form-email").attr("placeholder", "Oops..! Please try again.");
+        $("#form-email").val("");
+        $("#form-submit").val("Join Us!");
     }).always(function(){
         $("#form-submit").val("Join Us!");
     });
