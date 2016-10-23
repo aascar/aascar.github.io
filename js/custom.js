@@ -13,7 +13,7 @@ $(document).on('submit', "#form-join", function(e){
     obj.text = text;
     obj.icon_emoji = ":rocket:";
     $.ajax({
-        url : "https://hooks.slack.com/services/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",
+        url : "https://hooks.slack.com/services/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",
         method : "POST",
         dataType: 'text',
         async: true,
