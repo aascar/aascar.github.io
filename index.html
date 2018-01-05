@@ -46,6 +46,29 @@
         .navbar{
             margin-bottom: 0px !important;
         }
+        h3.title {
+            display: none;
+        }
+        @media (max-width: 480px) {
+            .text-container{
+                padding: 10px;
+            }
+            .about{
+                font-size: medium;
+                line-height: 1.4;
+                padding: 5px;
+            }
+            h3.title {
+                font-size: 18px;
+                display: block;
+            }
+        }
+
+        @media (max-width: 991px) {
+            h3.title {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -73,6 +96,7 @@
 
     <div class="text-container">
         <div class="about">
+            <h3 class="title" align="center">A self paced learning community</h3>
             <p>We are a group of self paced learners who collaborated to work on cutting edge technologies. We just work in our free time and contribute to any project intended to solve real world problems using Computer Science technologies.</p>
             <br>
             <h4>Objectives:</h4>
